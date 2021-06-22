@@ -1,0 +1,12 @@
+@media only screen and (max-width:960px){
+    .header nav {
+        display: none;
+    }
+    .mobile-box{
+        display: block;
+    }
+    .mobile-button {
+        display: block;
+    }
+
+}
