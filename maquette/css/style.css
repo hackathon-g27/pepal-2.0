@@ -1,6 +1,6 @@
 /* general */
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Itim&family=Open+Sans&family=Pacifico&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 :root {
     --orange-transparent: #ff821cc7;
     --white: #FBFAFC;
@@ -200,7 +200,7 @@ nav ul li a{
 }
 
 .acces-rapide {
-    width: 800px;
+    width: fit-content;
     max-width: 90vw;
     border: 2px solid white;
     margin: auto;
@@ -319,6 +319,83 @@ nav ul li a{
 .mobile-menu nav ul li a:hover {
     color: #fff;
     box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0);
+}
+
+footer {
+    height: 150px;
+}
+/* Cours panel */
+
+.cours-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+    max-width: 95vw;
+    margin: auto;
+    gap: 2em;
+}
+
+.cours-card {
+    position:relative;
+    margin: auto;
+    height: 200px;
+    width: 400px;
+    max-width: 40vw;
+    background-color: rgba(240, 239, 241, 0.568);
+    padding: 2em;
+    -webkit-box-shadow: 3px 3px 4px 0px rgba(00,00,00,0.2);
+    box-shadow: 3px 3px 4px 0px rgba(00,00,00,0.2);
+    border-radius: 7px;
+}
+
+.cours-card h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--white);
+    text-shadow:1px 2px 0px rgba(137, 137, 153, 0.562);
+    margin-bottom: 0.5em;
+}
+
+.tab {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.edt {
+    margin-bottom: 1.5em;
+}
+
+.edt p {
+    padding: 0.5em 0;
+    font-size: 1.2em;
+}
+
+.edt .matiere {
+    font-weight: bold   ;
+}
+
+.link {
+    margin: auto;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 0.6em 0.8em;
+    width: fit-content;
+    border-radius: 1.2em;
+    background-color: rgba(105, 90, 205, 0.575);
+    color: var(--white);
+    text-shadow:1px 1   px 0px rgba(137, 137, 153, 0.562);
+    -webkit-box-shadow: 3px 3px 4px 0px rgba(00,00,00,0.2);
+    box-shadow: 3px 3px 4px 0px rgba(00,00,00,0.2);
+}
+
+.link i{
+    margin-right: 0.5em;
+}
+
+.on-air:hover{
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 
