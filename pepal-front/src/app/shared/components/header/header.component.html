@@ -9,10 +9,7 @@
       </a>
       <nav class="navbar">
         <ul>
-          <li><a href="">Cours </a></li>
-          <li><a href="">Compte <span class="notif">1</span></a></li>
-          <li><a href="">Messagerie<span class="notif">3</span></a></li>
-          <li><a href="">Déconnexion</a></li>
+          <app-nav-item *ngFor="let item of navItems" [item]="item"></app-nav-item>
         </ul>
       </nav>
     </div>
@@ -21,10 +18,7 @@
       <div class="mobile-menu display-none" id="mobile-menu-toggled">
         <nav class="mobile-nav">
           <ul>
-            <li><a href="">Cours</a></li>
-            <li><a href="">Compte <span class="notif">1</span></a></li>
-            <li><a href="">Messagerie <span class="notif">3</span></a></li>
-            <li><a href="">Déconnexion</a></li>
+            <app-nav-item *ngFor="let item of navItems" [item]="item"></app-nav-item>
           </ul>
         </nav>
       </div>
