@@ -6,7 +6,7 @@
     --white: #FBFAFC;
     --turquoise: #2FFFAD;
     --violet: #845EC2;
-    
+
 }
 
 * {
@@ -189,11 +189,11 @@ nav ul li a{
     box-shadow: 2px 2px 3px 0px rgba(00,00,00,0.2);
     border-radius: 3px;
     color: var(--white);
-   
+
     padding: 1px 3px;
     font-size: 0.8em;
-    
-    position: absolute; 
+
+    position: absolute;
     top: -12px;
     right: -12px;
 
@@ -223,7 +223,7 @@ nav ul li a{
     -webkit-box-shadow: 2px 2px 3px 0px rgba(00,00,00,0.2);
     box-shadow: 2px 2px 3px 0px rgba(00,00,00,0.2);
     text-shadow:1px 2px 2px rgba(137, 137, 153, 0.562);
-    
+
 }
 
 /* mobile-menu */
@@ -290,7 +290,7 @@ nav ul li a{
     padding-bottom: 20px;
     animation: bounce 0.7s;
 }
-    
+
 .mobile-menu nav ul li a {
     margin-bottom: 10px;
     color: var(--white);
@@ -325,7 +325,7 @@ nav ul li a{
 /* sign-in  */
 
 .form-wrapper {
-    margin: 0 auto 20px auto; 
+    margin: 0 auto 20px auto;
 }
 
 .form-wrapper form {
@@ -450,7 +450,7 @@ nav ul li a{
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
-  
+
     40%,
     43% {
       -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
@@ -458,21 +458,21 @@ nav ul li a{
       -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
       transform: translate3d(0, -30px, 0) scaleY(1.1);
     }
-  
+
     70% {
       -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
       animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
       -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
       transform: translate3d(0, -15px, 0) scaleY(1.05);
     }
-  
+
     80% {
       -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
       transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
       -webkit-transform: translate3d(0, 0, 0) scaleY(0.95);
       transform: translate3d(0, 0, 0) scaleY(0.95);
     }
-  
+
     90% {
       -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
       transform: translate3d(0, -4px, 0) scaleY(1.02);
@@ -489,7 +489,7 @@ nav ul li a{
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
-  
+
     40%,
     43% {
       -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
@@ -497,21 +497,21 @@ nav ul li a{
       -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
       transform: translate3d(0, -30px, 0) scaleY(1.1);
     }
-  
+
     70% {
       -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
       animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
       -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
       transform: translate3d(0, -15px, 0) scaleY(1.05);
     }
-  
+
     80% {
       -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
       transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
       -webkit-transform: translate3d(0, 0, 0) scaleY(0.95);
       transform: translate3d(0, 0, 0) scaleY(0.95);
     }
-  
+
     90% {
       -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
       transform: translate3d(0, -4px, 0) scaleY(1.02);
@@ -524,7 +524,7 @@ nav ul li a{
       transform: translate3d(100%, 0, 0);
       visibility: visible;
     }
-  
+
     to {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
@@ -537,7 +537,7 @@ nav ul li a{
       transform: translate3d(100%, 0, 0);
       visibility: visible;
     }
-  
+
     to {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
@@ -546,9 +546,9 @@ nav ul li a{
 
 @keyframes slide {
     0% {margin-top:-300px;}
-    5% {margin-top:-200px;} 
+    5% {margin-top:-200px;}
     33% {margin-top:-200px;}
-    38% {margin-top:-100px;} 
+    38% {margin-top:-100px;}
     66% {margin-top:-100px;}
     71% {margin-top:0px;}
     100% {margin-top:0px;}
@@ -561,7 +561,7 @@ nav ul li a{
     to {
         transform: rotate(359deg);
     }
-    
+
 }
 
 @-webkit-keyframes rotate {
