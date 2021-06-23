@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormControl, Validators} from '@angular/forms';
+import {ActivatedRoute} from '@angular/router';
 
 declare var apiRTC: any;
 
@@ -14,10 +15,14 @@ export class RoomComponent implements OnInit {
     name: this.fb.control('', [Validators.required])
   });
 
-  constructor(private fb: FormBuilder) {
+  roomId: string;
+
+  constructor(private fb: FormBuilder, private activatedRoute: ActivatedRoute) {
   }
 
   ngOnInit(): void {
+    this.roomId = this.activatedRoute.snapshot.params.roomId;
+    this.getOrcreateConversation();
   }
 
   get conversationNameFc(): FormControl {
@@ -26,25 +31,17 @@ export class RoomComponent implements OnInit {
 
   getOrcreateConversation() {
     var localStream = null;
-    //==============================
-    // 1/ CREATE USER AGENT
-    //==============================
+    // 1 CREATE USER AGENT
     var ua = new apiRTC.UserAgent({
       uri: 'apzkey:3eb40c8d4a62c70107ac757458533c44'
     });
-    //==============================
-    // 2/ REGISTER
-    //==============================
+    // 2 REGISTER
     ua.register().then((session) => {
-      //==============================
-      // 3/ CREATE CONVERSATION
-      //==============================
-      const conversation = session.getConversation(this.conversationNameFc.value);
-      //==========================================================
-      // 4/ ADD EVENT LISTENER : WHEN NEW STREAM IS AVAILABLE IN CONVERSATION
-      //==========================================================
+      // 3 CREATE CONVERSATION
+      const conversation = session.getConversation(this.roomId);
+      // 4 ADD EVENT LISTENER : WHEN NEW STREAM IS AVAILABLE IN CONVERSATION
       conversation.on('streamListChanged', (streamInfo: any) => {
-        console.log("streamListChanged :", streamInfo);
+        console.log('streamListChanged :', streamInfo);
         if (streamInfo.listEventType === 'added') {
           if (streamInfo.isRemote === true) {
             conversation.subscribeToMedia(streamInfo.streamId)
@@ -56,17 +53,15 @@ export class RoomComponent implements OnInit {
           }
         }
       });
-      //=====================================================
-      // 4 BIS/ ADD EVENT LISTENER : WHEN STREAM IS ADDED/REMOVED TO/FROM THE CONVERSATION
-      //=====================================================
-      conversation.on('streamAdded', (stream: any) => {
-        stream.addInDiv('remote-container', 'remote-media-' + stream.streamId, {}, false);
-      }).on('streamRemoved', (stream: any) => {
-        stream.removeFromDiv('remote-container', 'remote-media-' + stream.streamId);
-      });
-      //==============================
-      // 5/ CREATE LOCAL STREAM
-      //==============================
+      // 4 BIS ADD EVENT LISTENER : WHEN STREAM IS ADDED/REMOVED TO/FROM THE CONVERSATION
+      conversation
+        .on('streamAdded', (stream: any) =>
+          stream.addInDiv('remote-container', 'remote-media-' + stream.streamId, {}, false)
+        )
+        .on('streamRemoved', (stream: any) =>
+          stream.removeFromDiv('remote-container', 'remote-media-' + stream.streamId)
+        );
+      // 5 CREATE LOCAL STREAM
       ua.createStream({
         constraints: {
           audio: true,
@@ -79,18 +74,17 @@ export class RoomComponent implements OnInit {
           localStream = stream;
           stream.removeFromDiv('local-container', 'local-media');
           stream.addInDiv('local-container', 'local-media', {}, true);
-          //==============================
-          // 6/ JOIN CONVERSATION
-          //==============================
-          conversation.join()
-            .then((response: any) => {
-              //==============================
-              // 7/ PUBLISH LOCAL STREAM
-              //==============================
-              conversation.publish(localStream);
-            }).catch((err) => {
-            console.error('Conversation join error', err);
-          });
+
+          conversation
+            // 6 join conversation
+            .join()
+            // 7 publish local stream
+            .then((response: any) =>
+              conversation.publish(localStream)
+            )
+            .catch((err) =>
+              console.error('Conversation join error', err)
+            );
         }).catch((err) => {
         console.error('create stream error', err);
       });
