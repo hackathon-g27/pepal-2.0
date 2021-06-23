@@ -9,7 +9,6 @@ import { NotesComponent } from './components/notes/notes.component';
 import { RendusComponent } from './components/rendus/rendus.component';
 import {RouterModule} from '@angular/router';
 
-
 @NgModule({
   declarations: [
     CoursDashboardComponent,

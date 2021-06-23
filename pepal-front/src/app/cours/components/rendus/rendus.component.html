@@ -1,1 +1,21 @@
-<p>rendus works!</p>
+<div class="rendus-card">
+    <h6>Rendus récents</h6>
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th scope="col">Titre</th>
+                <th scope="col">Matière</th>
+                <th scope="col">Intervenant</th>
+                <th scope="col">Échéance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let rendu of rendus">
+                <td scope="row">{{ rendu.title }}</td>
+                <td scope="row">{{ rendu.course }}</td>
+                <td scope="row">{{ rendu.teacher.nom.toUpperCase() + ' ' + rendu.teacher.prenom }}</td>
+                <td scope="row">{{ rendu.deadline | date: 'dd/MM/yyyy' }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
