@@ -6,6 +6,7 @@ import {CoursRoutingModule} from './cours-routing.module';
 import {SharedModule} from '../shared/shared.module';
 import { AbsencesComponent } from './components/absences/absences.component';
 import { NotesComponent } from './components/notes/notes.component';
+import { RendusComponent } from './components/rendus/rendus.component';
 import {RouterModule} from '@angular/router';
 
 
@@ -14,7 +15,8 @@ import {RouterModule} from '@angular/router';
     CoursDashboardComponent,
     CoursDuJour,
     AbsencesComponent,
-    NotesComponent
+    NotesComponent,
+    RendusComponent
   ],
   imports: [
     CommonModule,
