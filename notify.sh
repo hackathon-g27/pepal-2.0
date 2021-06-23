@@ -1,0 +1,1 @@
+  web-push send-notification --endpoint= --key= --auth= --payload='{"test": "hello world"}' --vapid-subject="http://localhost:4200" --vapid-pubkey="BJfAmFl74-06SLITrQXPSz0DHfidw5EuglCHeKmpikpUGiunw8PlHC9UoDUG0Tp2TGygfozUPPx4U3pEgjZnFpw" --vapid-pvtkey="jALvVFu3UG3ka1gSueGC8aFzBD5U6r3rLhZWgnKIlCY" [--gcm-api-key=<api key>]
