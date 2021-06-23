@@ -19,7 +19,7 @@
                 <td scope="row">{{ absence.course.label }}</td>
                 <td scope="row">{{ absence.course.from.getHours() + 'h' + absence.course.from.getMinutes() }}</td>
                 <td scope="row">{{ absence.course.to.getHours() + 'h' + absence.course.to.getMinutes() }}</td>
-                <td scope="row">{{ absence.duration | hourFormat }}</td>
+                <td scope="row">{{ absence.duration | duration }}</td>
                 <td scope="row" class="text-center" style="font-size: medium;">
                     <i class="fas fa-check text-success" *ngIf="absence.isJustified"></i>
                     <i class="fas fa-exclamation-triangle" style="color: rgb(255, 166, 0);" *ngIf="!absence.isJustified"></i>
