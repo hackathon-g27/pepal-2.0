@@ -1,0 +1,30 @@
+<div class="absences-card">
+    <h6>Absences et retards récents</h6>
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Type</th>
+                <th scope="col">Matière</th>
+                <th scope="col">Début</th>
+                <th scope="col">Fin</th>
+                <th scope="col">Durée</th>
+                <th scope="col">Justifiée</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let absence of absences">
+                <td scope="row">{{ absence.date }}</td>
+                <td scope="row">{{ absence.type }}</td>
+                <td scope="row">{{ absence.course.label }}</td>
+                <td scope="row">{{ absence.course.from.getHours() + 'h' + absence.course.from.getMinutes() }}</td>
+                <td scope="row">{{ absence.course.to.getHours() + 'h' + absence.course.to.getMinutes() }}</td>
+                <td scope="row">{{ absence.duration | hourFormat }}</td>
+                <td scope="row" class="text-center" style="font-size: medium;">
+                    <i class="fas fa-check text-success" *ngIf="absence.isJustified"></i>
+                    <i class="fas fa-exclamation-triangle" style="color: rgb(255, 166, 0);" *ngIf="!absence.isJustified"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
