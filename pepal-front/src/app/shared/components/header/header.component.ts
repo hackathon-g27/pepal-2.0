@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   navItems: NavItem[] = [
     {
       title:'Cours',
-      link:'#',
+      link:'cours',
       badge:'1'
     }, {
       title: 'Messagerie',

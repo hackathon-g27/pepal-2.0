@@ -1,35 +1,14 @@
-<div class="wrap-outer">
-  <div class="wrap">
-    <div class="header">
-      <a href="index.html">
-        <div class="logo">
-          <!-- <img src="assets/images/refresh-icon.svg"> -->
-          <div class="logo-text">PEPAL - Sup de Vinci</div>
-        </div>
-      </a>
-      <nav class="navbar">
-        <ul>
-          <app-nav-item *ngFor="let item of navItems" [item]="item"></app-nav-item>
-        </ul>
-      </nav>
+<div class="header">
+  <a href="index.html">
+    <div class="logo">
+      <!-- <img src="assets/images/refresh-icon.svg"> -->
+      <div class="logo-text">PEPAL - Sup de Vinci</div>
     </div>
-
-    <div class="mobile-box display-none" id="mobile-box">
-      <div class="mobile-menu display-none" id="mobile-menu-toggled">
-        <nav class="mobile-nav">
-          <ul>
-            <app-nav-item *ngFor="let item of navItems" [item]="item"></app-nav-item>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="mobile-button display-none" id="mobile-button-toggler" onclick="toggle()">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </div>
-    </div>
-    <button id="btnDarkMode" onclick="darkMode()"><i class="fas fa-moon"></i></button>
-    <button id="btnLightMode" onclick="lightMode()" style="display: none;"><i class="fas fa-sun"></i></button>
-
-  </div>
-
+  </a>
+  <nav class="navbar">
+    <ul>
+      <app-nav-item *ngFor="let item of navItems" [item]="item"></app-nav-item>
+    </ul>
+  </nav>
 </div>
+
