@@ -4,6 +4,7 @@ import {CoursDashboardComponent} from './components/cours-dashboard/cours-dashbo
 import {CoursDuJour} from './components/cours-du-jour/cours-du-jour.component';
 import {CoursRoutingModule} from './cours-routing.module';
 import {SharedModule} from '../shared/shared.module';
+import {RouterModule} from '@angular/router';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import {SharedModule} from '../shared/shared.module';
   imports: [
     CommonModule,
     CoursRoutingModule,
-    SharedModule
+    SharedModule,
+    RouterModule
   ]
 })
 export class CoursModule {
