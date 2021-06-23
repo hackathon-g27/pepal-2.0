@@ -1,0 +1,21 @@
+<div class="notes-card">
+    <h6>Dernières notes</h6>
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th scope="col">Matière</th>
+                <th scope="col">Date</th>
+                <th scope="col">Coef</th>
+                <th scope="col">Note</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let note of notes">
+                <td scope="row">{{ note.course }}</td>
+                <td scope="row">{{ note.date | date: 'dd/MM/yyyy' }}</td>
+                <td scope="row" class="text-center">{{ note.coefficient }}</td>
+                <td scope="row" class="text-center">{{ note.value }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

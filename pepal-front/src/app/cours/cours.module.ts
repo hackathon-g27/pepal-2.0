@@ -5,13 +5,15 @@ import {CoursDuJour} from './components/cours-du-jour/cours-du-jour.component';
 import {CoursRoutingModule} from './cours-routing.module';
 import {SharedModule} from '../shared/shared.module';
 import { AbsencesComponent } from './components/absences/absences.component';
+import { NotesComponent } from './components/notes/notes.component';
 
 
 @NgModule({
   declarations: [
     CoursDashboardComponent,
     CoursDuJour,
-    AbsencesComponent
+    AbsencesComponent,
+    NotesComponent
   ],
   imports: [
     CommonModule,
