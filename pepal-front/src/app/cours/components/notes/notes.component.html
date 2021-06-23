@@ -13,7 +13,7 @@
             <tr *ngFor="let note of notes">
                 <td scope="row">{{ note.course }}</td>
                 <td scope="row">{{ note.date | date: 'dd/MM/yyyy' }}</td>
-                <td scope="row" class="text-center">{{ note.coefficient }}</td>
+                <td scope="row" class="text-center">{{ note.coefficient.toFixed(1) }}</td>
                 <td scope="row" class="text-center">{{ note.value }}</td>
             </tr>
         </tbody>
