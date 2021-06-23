@@ -4,12 +4,14 @@ import {CoursDashboardComponent} from './components/cours-dashboard/cours-dashbo
 import {CoursDuJour} from './components/cours-du-jour/cours-du-jour.component';
 import {CoursRoutingModule} from './cours-routing.module';
 import {SharedModule} from '../shared/shared.module';
+import { AbsencesComponent } from './components/absences/absences.component';
 
 
 @NgModule({
   declarations: [
     CoursDashboardComponent,
-    CoursDuJour
+    CoursDuJour,
+    AbsencesComponent
   ],
   imports: [
     CommonModule,
