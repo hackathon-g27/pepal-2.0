@@ -1,0 +1,8 @@
+.cours-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: fit-content;
+  max-width: 95vw;
+  margin: auto;
+  gap: 2em;
+}

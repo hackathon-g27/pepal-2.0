@@ -1,0 +1,28 @@
+<div class="cours-card">
+  <h6>Cours de la journée</h6>
+  <table class="table table-borderless">
+    <thead>
+    <tr>
+      <th scope="col">heures</th>
+      <th scope="col">matière</th>
+      <th scope="col">intervenant</th>
+      <th scope="col">salle</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let cour of cours">
+      <th scope="row">
+        {{cour.from.getHours() | integerDigits: 2}}h{{cour.from.getMinutes() | integerDigits: 2}} / {{cour.to.getHours() | integerDigits: 2}}h{{cour.to.getMinutes() | integerDigits: 2}}
+      </th>
+      <td>Angular</td>
+      <td>Jacob Thornton</td>
+      <td class="text-center">
+        <span *ngIf="cour.salle;else teletravail">{{cour.salle}}</span>
+        <ng-template #teletravail><i class="fa fa-video-camera fa-1" aria-hidden="true"></i></ng-template>
+      </td>
+    </tr>
+  </table>
+  <div class="on-air link">
+    <a href="#"><i class="fas fa-circle" style="color: rgb(238, 24, 24);"></i>Rejoindre le cours </a>
+  </div>
+</div>
