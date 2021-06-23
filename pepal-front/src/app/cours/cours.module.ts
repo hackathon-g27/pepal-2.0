@@ -6,6 +6,7 @@ import {CoursRoutingModule} from './cours-routing.module';
 import {SharedModule} from '../shared/shared.module';
 import { AbsencesComponent } from './components/absences/absences.component';
 import { NotesComponent } from './components/notes/notes.component';
+import {RouterModule} from '@angular/router';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { NotesComponent } from './components/notes/notes.component';
   imports: [
     CommonModule,
     CoursRoutingModule,
-    SharedModule
+    SharedModule,
+    RouterModule
   ]
 })
 export class CoursModule {
