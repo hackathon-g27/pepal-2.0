@@ -13,3 +13,5 @@ C'est donc notre objectif, reconstruire Pepal de fond en comble pour le rendre p
 Concernant l'appel, on a pense a un systeme simplifie, tout le monde a tout le temps son telephone sur soit, pourquoi ne pas en profiter ?
 On a dans l'idee d'utiliser Pepal qui serait disponible en application mobile comme interface, en placant a l'entree des salles des tags NFC pour permettre de pointer notre arrivee et s'inscrire comme etant present, juste en passant son telephone sur le badge.
 Pourquoi un badge et pas une borne ? Car on veut une solution facilement transportable et integrable partout, on colle un tag NFC ou l'on veut et c'est parti.
+
+On l'utiliserai pour le pointage, mais la technologie NFC est tellement permissive que l'on pourrait imaginer n'importe quel systeme demandant une verification d'identite, comme l'acces a l'ecole aux portiques ou meme des distributeurs automatiques.
