@@ -8,6 +8,7 @@ import { AbsencesComponent } from './components/absences/absences.component';
 import { NotesComponent } from './components/notes/notes.component';
 import { RendusComponent } from './components/rendus/rendus.component';
 import {RouterModule} from '@angular/router';
+import { ActusComponent } from './components/actus/actus.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {RouterModule} from '@angular/router';
     CoursDuJour,
     AbsencesComponent,
     NotesComponent,
-    RendusComponent
+    RendusComponent,
+    ActusComponent
   ],
   imports: [
     CommonModule,

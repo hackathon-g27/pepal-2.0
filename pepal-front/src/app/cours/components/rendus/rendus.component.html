@@ -1,5 +1,5 @@
 <div class="rendus-card">
-    <h6>Rendus récents</h6>
+    <h2>Rendus récents</h2>
     <table class="table table-borderless">
         <thead>
             <tr>
@@ -16,7 +16,7 @@
                 <td scope="row">{{ rendu.course }}</td>
                 <td scope="row">{{ rendu.teacher.nom.toUpperCase() + ' ' + rendu.teacher.prenom }}</td>
                 <td scope="row">{{ rendu.deadline | date: 'dd/MM/yyyy' }}</td>
-                <td scope="row">{{ rendu.files.slice(-1)[0].uploadDate | date: 'dd/MM/yyyy' }}</td>
+                <td scope="row"><a [href]="rendu.files.slice(-1)[0].path">{{ rendu.files.slice(-1)[0].uploadDate | date: 'dd/MM/yyyy' }}</a></td>
             </tr>
         </tbody>
     </table>
