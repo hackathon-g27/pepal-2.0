@@ -1,0 +1,7 @@
+<div class="actus-card">
+    <h2>Actus</h2>
+    <div class="actu" *ngFor="let actu of actus">
+        <h3><a routerLink="{{ 'actu/' + actu.id }}">{{ actu.title }}</a></h3>
+        <p class="ps-3">{{ actu.content }}</p>
+    </div>
+</div>
