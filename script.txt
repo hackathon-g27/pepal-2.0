@@ -1,5 +1,7 @@
 Bonjour a vous, on va essayer de vous presenter dans le temps imparti notre vision pour le futur de Sup de Vinci.
 
+# PEPAL:
+
 On s'est d'abord pose une question, qu'est-ce qui cloche le plus dans l'ecole ? La reponse etait simple, Pepal.
 Bien que tres complet, Pepal a fait son temps en terme d'interface et d'interet, en plus d'etre assez moche, il ne sert pratiquement a rien, on y va juste pour se signaler present et c'est mare.
 Ce que l'on voudrait, ca serait une application moderne, qui repond aux attentes du 21e siecle, une application qui en plus d'etre belle, est simple et rassemble tous nos outils.
@@ -10,8 +12,19 @@ C'est donc notre objectif, reconstruire Pepal de fond en comble pour le rendre p
 
 [DEMO]
 
+# IOT:
+
 Concernant l'appel, on a pense a un systeme simplifie, tout le monde a tout le temps son telephone sur soit, pourquoi ne pas en profiter ?
 On a dans l'idee d'utiliser Pepal qui serait disponible en application mobile comme interface, en placant a l'entree des salles des tags NFC pour permettre de pointer notre arrivee et s'inscrire comme etant present, juste en passant son telephone sur le badge.
 Pourquoi un badge et pas une borne ? Car on veut une solution facilement transportable et integrable partout, on colle un tag NFC ou l'on veut et c'est parti.
 
 On l'utiliserai pour le pointage, mais la technologie NFC est tellement permissive que l'on pourrait imaginer n'importe quel systeme demandant une verification d'identite, comme l'acces a l'ecole aux portiques ou meme des distributeurs automatiques.
+
+# E-LEARNING:
+
+Comme on a dit plus tot, ou souhaite faire de Pepal une application centrale et essentielle, un espece de HUB, cela passera aussi par l'integration d'outils de communication.
+On utilise a distance Teams pour communiquer, mais ce n'est pas si performant et si l'on veut contacter un professeur, on finit tres souvent par leur envoyer un SMS.
+Pour le partage de documents c'est aussi tres complique, l'interface pas claire n'aidant pas.
+Meme les notes souffrent de cette mauvaise interface.
+
+On va donc integrer des outils de communication, comme un chat RTC pour la communication avec une interface que l'on travaillera, une section sur la page d'accueil qui permet de rejoindre directement le cours s'il se fait en ligne, la presence de notifications de type push avec l'essentiel de l'information
