@@ -1,0 +1,15 @@
+Bonjour a vous, on va essayer de vous presenter dans le temps imparti notre vision pour le futur de Sup de Vinci.
+
+On s'est d'abord pose une question, qu'est-ce qui cloche le plus dans l'ecole ? La reponse etait simple, Pepal.
+Bien que tres complet, Pepal a fait son temps en terme d'interface et d'interet, en plus d'etre assez moche, il ne sert pratiquement a rien, on y va juste pour se signaler present et c'est mare.
+Ce que l'on voudrait, ca serait une application moderne, qui repond aux attentes du 21e siecle, une application qui en plus d'etre belle, est simple et rassemble tous nos outils.
+Aujourd'hui, si l'on veut faire cours a distance par exemple, on doit se connecter sur Pepal, aller dans le menu des presences, selectionner le bon cours, nous inscrire, ensuite on se deconnecte, on demarre Teams, on selectionne le bon groupe, puis la bonne conversation et enfin on a acces au cours.
+Au final, on a utilise 2 outils, navigue dans une dizaine de menus, tout ca juste pour arriver en cours, on a encore rien fait, si l'on veut recuperer un document partage pendant ce cours ou ne serait-ce que pour voir nos notes, c'est la meme corvee, voir pire.
+
+C'est donc notre objectif, reconstruire Pepal de fond en comble pour le rendre plus agreable a naviguer et surtout utile en integrant des outils de communications pour les cours, un acces simplifie aux documents et aux aspects qui baignent notre quotidien.
+
+[DEMO]
+
+Concernant l'appel, on a pense a un systeme simplifie, tout le monde a tout le temps son telephone sur soit, pourquoi ne pas en profiter ?
+On a dans l'idee d'utiliser Pepal qui serait disponible en application mobile comme interface, en placant a l'entree des salles des tags NFC pour permettre de pointer notre arrivee et s'inscrire comme etant present, juste en passant son telephone sur le badge.
+Pourquoi un badge et pas une borne ? Car on veut une solution facilement transportable et integrable partout, on colle un tag NFC ou l'on veut et c'est parti.
