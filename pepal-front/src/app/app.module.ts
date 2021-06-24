@@ -7,6 +7,11 @@ import {SharedModule} from './shared/shared.module';
 import {CoursModule} from './cours/cours.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MessageService} from 'primeng/api';
+import {ToastModule} from 'primeng/toast';
+import {ButtonModule} from 'primeng/button';
+import {RippleModule} from 'primeng/ripple';
+import {MessageModule} from 'primeng/message';
 
 @NgModule({
   declarations: [
@@ -20,8 +25,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     SharedModule,
     CoursModule,
     FormsModule,
+    ToastModule,
+    ButtonModule,
+    RippleModule,
+    ToastModule,
+    MessageModule,
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
