@@ -1,8 +1,18 @@
-:host ::ng-deep.sticky-note {
+:host ::ng-deep.appel-open {
   background-color: #fff;
   width: 50vw;
 }
 
-:host ::ng-deep.p-toast {
-  width: initial;
+:host ::ng-deep.appel-confirm {
+  background-color: #fff;
+  height: 200px;
+}
+
+:host ::ng-deep {
+  &.p-toast {
+    width: initial;
+  }
+  &.p-toast-icon-close {
+    display: none;
+  }
 }

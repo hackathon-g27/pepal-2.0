@@ -84,7 +84,6 @@ ol, ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 5%;
   margin-top: 10px;
   margin-bottom: 50px;
 }
@@ -100,7 +99,7 @@ ol, ul {
   -webkit-box-align:center;
   -ms-flex-align:center;
   align-items:center;
-  padding:0px 10px 0px 0px;
+  padding:0 10px 0 0;
 }
 
 .logo-text{
@@ -108,7 +107,7 @@ ol, ul {
   font-size:1.1em;
   font-weight: 600;
   position:relative;
-  text-shadow:1px 2px 0px rgba(137, 137, 153, 0.562);
+  text-shadow:1px 2px 0 rgba(137, 137, 153, 0.562);
 }
 
 .logo-text:after {
@@ -120,8 +119,8 @@ ol, ul {
   border-radius: 3px;
   background-color: #FF7BDA;
   font-size: 0.6em;
-  -webkit-box-shadow: 2px 2px 3px 0px rgba(00,00,00,0.2);
-  box-shadow: 2px 2px 3px 0px rgba(00,00,00,0.2);
+  -webkit-box-shadow: 2px 2px 3px 0 rgba(00,00,00,0.2);
+  box-shadow: 2px 2px 3px 0 rgba(00,00,00,0.2);
   text-shadow:none;
 }
 
@@ -225,8 +224,8 @@ nav ul li a{
   background-color: rgba(0, 0, 0, 0.315);
   color: #fbfafcbe;
   border-radius: 50%;
-  -webkit-box-shadow: 2px 2px 3px 0px rgba(00,00,00,0.2);
-  box-shadow: 2px 2px 3px 0px rgba(00,00,00,0.2);
+  -webkit-box-shadow: 2px 2px 3px 0 rgba(00,00,00,0.2);
+  box-shadow: 2px 2px 3px 0 rgba(00,00,00,0.2);
   text-shadow:1px 2px 2px rgba(137, 137, 153, 0.562);
 
 }
@@ -262,8 +261,8 @@ nav ul li a{
   right: 0;
   margin: 0 30px;
   z-index: 9;
-  -webkit-box-shadow: 3px 3px 5px 0px rgba(00,00,00,0.2);
-  box-shadow: 3px 3px 5px 0px rgba(00,00,00,0.2);
+  -webkit-box-shadow: 3px 3px 5px 0 rgba(00,00,00,0.2);
+  box-shadow: 3px 3px 5px 0 rgba(00,00,00,0.2);
   cursor: pointer;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
@@ -307,8 +306,8 @@ nav ul li a{
   line-height: 100%;
   padding: 12px;
   text-align: center;
-  -webkit-box-shadow: 2px 2px 3px 0px rgba(00,00,00,0.2);
-  box-shadow: 2px 2px 3px 0px rgba(00,00,00,0.2);
+  -webkit-box-shadow: 2px 2px 3px 0 rgba(00,00,00,0.2);
+  box-shadow: 2px 2px 3px 0 rgba(00,00,00,0.2);
   -webkit-transition: all 0.1s;
   -o-transition: all 0.1s;
   transition: all 0.1s;
@@ -323,7 +322,7 @@ nav ul li a{
 
 .mobile-menu nav ul li a:hover {
   color: #fff;
-  box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0);
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0);
 }
 
 
@@ -378,8 +377,8 @@ nav ul li a{
 }
 
 .form-wrapper form p a:hover{
-  -webkit-box-shadow: 2px 2px 3px 0px rgba(00,00,00,0);
-  box-shadow: 2px 2px 3px 0px rgba(00,00,00,0);
+  -webkit-box-shadow: 2px 2px 3px 0 rgba(00,00,00,0);
+  box-shadow: 2px 2px 3px 0 rgba(00,00,00,0);
 }
 
 .form-wrapper form input, textarea {
@@ -438,7 +437,7 @@ nav ul li a{
 }
 
 .form-button:hover{
-  box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0);
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0);
 }
 
 

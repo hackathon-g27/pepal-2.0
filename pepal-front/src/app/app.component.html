@@ -6,8 +6,16 @@
     <app-header></app-header>
     <main class="container">
       <router-outlet></router-outlet>
-      <button type="button" pButton pRipple (click)="showConfirm()" label="Confirm" class="ui-button-warning"></button>
-
+      <p-toast position="center" key="center" [baseZIndex]="5000">
+        <ng-template let-message pTemplate="message">
+          <div class="p-flex p-flex-column mt-5" style="flex: 1">
+            <div class="text-center">
+              <p class="mb-4"><i class="far fa-check-circle fa-3x text-success"></i></p>
+              <p>{{message.summary}}</p>
+            </div>
+          </div>
+        </ng-template>
+      </p-toast>
       <p-toast position="bottom-center" key="c" (onClose)="onReject()" [baseZIndex]="5000">
         <ng-template let-message pTemplate="message">
           <div class="p-flex p-flex-column" style="flex: 1">

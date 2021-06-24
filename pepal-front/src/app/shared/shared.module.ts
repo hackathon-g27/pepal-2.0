@@ -5,6 +5,7 @@ import { NavItemComponent } from './components/header/nav-item/nav-item.componen
 import {RouterModule} from '@angular/router';
 import { IntegerDigitsPipe } from './pipes/integer-digits.pipe';
 import { DurationPipe } from './pipes/duration.pipe';
+import {AppelContexteService} from './services/appel-contexte.service';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { DurationPipe } from './pipes/duration.pipe';
   imports: [
     CommonModule,
     RouterModule
-  ]
+  ],
+  providers: [AppelContexteService]
 })
 export class SharedModule { }
