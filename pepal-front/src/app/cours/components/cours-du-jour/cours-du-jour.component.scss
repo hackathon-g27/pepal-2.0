@@ -1,16 +1,15 @@
 .cours-card {
-  position:relative;
+  position: relative;
   margin: auto;
   height: 200px;
-  width: 400px;
-  max-width: 40vw;
+  width: auto;
   background-color: rgba(240, 239, 241, 0.568);
   padding: 2em;
   -webkit-box-shadow: 3px 3px 4px 0 rgba(00,00,00,0.2);
   box-shadow: 3px 3px 4px 0 rgba(00,00,00,0.2);
   border-radius: 7px;
 
-  h6 {
+  h2 {
     font-family: 'Inter', sans-serif;
     font-size: 1.8em;
     font-weight: 700;

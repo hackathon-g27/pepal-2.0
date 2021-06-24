@@ -1,0 +1,23 @@
+<div class="rendus-card">
+    <h2>Rendus récents</h2>
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th scope="col">Titre</th>
+                <th scope="col">Matière</th>
+                <th scope="col">Intervenant</th>
+                <th scope="col">Échéance</th>
+                <th scope="col">Rendu le</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let rendu of rendus">
+                <td scope="row">{{ rendu.title }}</td>
+                <td scope="row">{{ rendu.course }}</td>
+                <td scope="row">{{ rendu.teacher.nom.toUpperCase() + ' ' + rendu.teacher.prenom }}</td>
+                <td scope="row">{{ rendu.deadline | date: 'dd/MM/yyyy' }}</td>
+                <td scope="row"><a [href]="rendu.files.slice(-1)[0].path">{{ rendu.files.slice(-1)[0].uploadDate | date: 'dd/MM/yyyy' }}</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -6,15 +6,18 @@ import {CoursRoutingModule} from './cours-routing.module';
 import {SharedModule} from '../shared/shared.module';
 import { AbsencesComponent } from './components/absences/absences.component';
 import { NotesComponent } from './components/notes/notes.component';
+import { RendusComponent } from './components/rendus/rendus.component';
 import {RouterModule} from '@angular/router';
-
+import { ActusComponent } from './components/actus/actus.component';
 
 @NgModule({
   declarations: [
     CoursDashboardComponent,
     CoursDuJour,
     AbsencesComponent,
-    NotesComponent
+    NotesComponent,
+    RendusComponent,
+    ActusComponent
   ],
   imports: [
     CommonModule,
