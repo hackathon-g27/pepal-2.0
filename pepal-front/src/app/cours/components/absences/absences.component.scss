@@ -1,9 +1,8 @@
-.absences-card {
-    position:relative;
+.absences-card{
+    position: relative;
     margin: auto;
     height: 200px;
     width: auto;
-    max-width: 40vw;
     background-color: rgba(240, 239, 241, 0.568);
     padding: 2em;
     -webkit-box-shadow: 3px 3px 4px 0 rgba(00,00,00,0.2);
@@ -12,10 +11,10 @@
 }
 
 h6 {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.8em;
-  font-weight: 700;
-  color: var(--white);
-  text-shadow:1px 2px 0 rgba(137, 137, 153, 0.562);
-  margin-bottom: 0.5em;
+font-family: 'Inter', sans-serif;
+font-size: 1.8em;
+font-weight: 700;
+color: var(--white);
+text-shadow:1px 2px 0 rgba(137, 137, 153, 0.562);
+margin-bottom: 0.5em;
 }

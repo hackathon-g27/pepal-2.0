@@ -5,4 +5,8 @@
   max-width: 95vw;
   margin: auto;
   gap: 2em;
+
+  app-rendus {
+    grid-area: 2 / 1 / 3 / 3;
+  }
 }
