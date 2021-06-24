@@ -7,6 +7,7 @@
                 <th scope="col">Matière</th>
                 <th scope="col">Intervenant</th>
                 <th scope="col">Échéance</th>
+                <th scope="col">Rendu le</th>
             </tr>
         </thead>
         <tbody>
@@ -15,6 +16,7 @@
                 <td scope="row">{{ rendu.course }}</td>
                 <td scope="row">{{ rendu.teacher.nom.toUpperCase() + ' ' + rendu.teacher.prenom }}</td>
                 <td scope="row">{{ rendu.deadline | date: 'dd/MM/yyyy' }}</td>
+                <td scope="row">{{ rendu.files.slice(-1)[0].uploadDate | date: 'dd/MM/yyyy' }}</td>
             </tr>
         </tbody>
     </table>

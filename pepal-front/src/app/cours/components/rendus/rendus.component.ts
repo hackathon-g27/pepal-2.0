@@ -13,7 +13,9 @@ export class RendusComponent implements OnInit {
   constructor(private rendusService: RendusService) { }
 
   ngOnInit(): void {
-    this.rendusService.getLastRendus().subscribe(rendus => this.rendus = rendus);
+    this.rendusService.getLastRendus().subscribe(rendus => {
+      this.rendus = rendus;
+      this.rendus.forEach(rendu => console.table(rendu.files));
+    });
   }
-
 }
