@@ -40,11 +40,15 @@ export class AppComponent implements OnInit {
   onConfirm(): void {
     this.acs.toggleAppel();
     this.messageService.clear();
-    this.messageService.add({
-      key: 'center',
-      summary: `Vous avez répondu présent à l'appel`,
-      detail: `La session d'appel du cours Angular de 9h00 à 12h30, animé par Jacob Thornton est ouvert`,
-      styleClass: 'appel-confirm'
-    });
+    setTimeout(() =>
+        this.messageService.add({
+          key: 'center',
+          life: 1500,
+          summary: `Vous avez répondu présent à l'appel`,
+          detail: `La session d'appel du cours Angular de 9h00 à 12h30, animé par Jacob Thornton est ouvert`,
+          styleClass: 'appel-confirm'
+        }),
+      1000
+    );
   }
 }
