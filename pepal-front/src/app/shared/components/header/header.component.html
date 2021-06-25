@@ -1,10 +1,8 @@
 <div class="header">
-  <a href="index.html">
     <div class="logo">
       <!-- <img src="assets/images/refresh-icon.svg"> -->
-      <div class="logo-text">PEPAL - Sup de Vinci</div>
+      <div class="logo-text" (click)="toggleAppel()">PEPAL - Sup de Vinci</div>
     </div>
-  </a>
   <nav class="navbar">
     <ul>
       <app-nav-item *ngFor="let item of navItems" [item]="item"></app-nav-item>

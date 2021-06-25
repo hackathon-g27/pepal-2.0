@@ -29,10 +29,10 @@ export class RoomComponent implements OnInit {
     return this.conversationFormGroup.get('name') as FormControl;
   }
 
-  getOrcreateConversation() {
-    var localStream = null;
+  getOrcreateConversation(): void {
+    let localStream = null;
     // 1 CREATE USER AGENT
-    var ua = new apiRTC.UserAgent({
+    const ua = new apiRTC.UserAgent({
       uri: 'apzkey:3eb40c8d4a62c70107ac757458533c44'
     });
     // 2 REGISTER

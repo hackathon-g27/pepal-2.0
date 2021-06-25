@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavItem } from '../../models/nav-item';
+import {AppelContexteService} from '../../services/appel-contexte.service';
 
 @Component({
   selector: 'app-header',
@@ -10,27 +11,30 @@ export class HeaderComponent implements OnInit {
 
   navItems: NavItem[] = [
     {
-      title:'Cours',
-      link:'cours',
-      badge:'1'
+      title: 'Cours',
+      link: 'cours',
+      badge: '1'
     }, {
       title: 'Messagerie',
-      link: "#",
-      badge:'3'
-    },{
+      link: '#',
+      badge: '3'
+    }, {
       title: 'Compte',
-      link: "#"
+      link: '#'
     },
     {
       title: 'Déconnexion',
-      link: "#"
+      link: '#'
     },
 
   ];
 
-  constructor() { }
+  constructor(private acs: AppelContexteService) { }
 
   ngOnInit(): void {
   }
 
+  toggleAppel(): void {
+    this.acs.toggleAppel();
+  }
 }
